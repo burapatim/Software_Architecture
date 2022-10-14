@@ -1,4 +1,4 @@
-public abstract class shape {
+public abstract class Shape {
     public abstract int getArea();
 
     public abstract int getWidth();
