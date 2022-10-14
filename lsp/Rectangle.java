@@ -1,5 +1,3 @@
-package com.solid.lsp;
-
 public class Rectangle extends Shape {
     // DO NOT EDIT THE FILE FROM THIS LINE ONWARD!!
     private int width;
@@ -11,9 +9,9 @@ public class Rectangle extends Shape {
     Rectangle(int width, int height) {
         this.width = width;
         this.height = height;
+
     }
 
-    public int getWidth() {
         return width;
     }
 
@@ -28,6 +26,7 @@ public class Rectangle extends Shape {
     public void setHeight(int height) {
         this.height = height;
     }
+
 
     public int getArea() {
         return width * height;
