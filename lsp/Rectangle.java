@@ -12,6 +12,7 @@ public class Rectangle extends Shape {
 
     }
 
+    public int getWidth() {
         return width;
     }
 
@@ -26,7 +27,6 @@ public class Rectangle extends Shape {
     public void setHeight(int height) {
         this.height = height;
     }
-
 
     public int getArea() {
         return width * height;

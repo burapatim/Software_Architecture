@@ -1,3 +1,3 @@
-public interface BookFilePrinter {
-    public void printToFile();
+public interface BookScreenPrinter {
+    public void printToScreen();
 }
