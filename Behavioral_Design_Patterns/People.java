@@ -1,32 +1,41 @@
-package edu.parinya.softarchdesign.behavioral2;
+package behavioral;
 
 // DO NOT MODIFY ANYTHING BELOW THIS LINE!!
-import java.io.PrintStream;
-import java.util.LinkedList;
-import java.util.List;
+public class Person {
+    private String name;
+    private Integer age;
+    private Integer height;
+    private Integer weight;
 
-public class People {
-    private List<Person> members;
-    private SortStrategy sortStrategy;
-
-    public People() {
-        members = new LinkedList<>();
-        this.setSortStrategy(new NameSortStrategy());
+    public String getName() {
+        return name;
     }
 
-    public void setSortStrategy(SortStrategy sortStrategy) {
-        this.sortStrategy = sortStrategy;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void addMember(Person p) {
-        members.add(p);
+    public Integer getAge() {
+        return age;
     }
 
-    public void print(PrintStream out) {
-        sortStrategy.customSort(members);
-        out.println("==== Printing Members ====");
-        for (Person p : members) {
-            out.println(p.getName());
-        }
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public Integer getHeight() {
+        return height;
+    }
+
+    public void setHeight(Integer height) {
+        this.height = height;
+    }
+
+    public Integer getWeight() {
+        return weight;
+    }
+
+    public void setWeight(Integer weight) {
+        this.weight = weight;
     }
 }
