@@ -1,6 +1,4 @@
-// Please DO NOT MODIFY THIS FILE
-package edu.parinya.softarchdesign.structural;
-
+package structural;
 
 public class Main {
 
@@ -19,9 +17,11 @@ public class Main {
         monji.service();
         System.out.println("Monji's price is " + monji.getPrice());
         teamMedicalDragon.service();
-        System.out.println("Before Monji leaves, the total price of the Team Medical Dragon is " + teamMedicalDragon.getPrice());
+        System.out.println(
+                "Before Monji leaves, the total price of the Team Medical Dragon is " + teamMedicalDragon.getPrice());
         teamMedicalDragon.removeMember(monji);
-        System.out.println("After Monji leaves, The total price of the Team Medical Dragon is " + teamMedicalDragon.getPrice());
+        System.out.println(
+                "After Monji leaves, The total price of the Team Medical Dragon is " + teamMedicalDragon.getPrice());
         System.out.println("================================");
 
         HealthcareWorkerTeam doctorX = new HealthcareWorkerTeam();
