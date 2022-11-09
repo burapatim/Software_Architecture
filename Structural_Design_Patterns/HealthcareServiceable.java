@@ -1,6 +1,7 @@
-package edu.parinya.softarchdesign.structural;
+package structural;
 
 public interface HealthcareServiceable {
     void service();
+
     double getPrice();
 }
